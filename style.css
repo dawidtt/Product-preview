@@ -1,0 +1,123 @@
+/*
+===================================================
+                    SHARED CSS
+===================================================
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2ebe3;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+#main-container {
+  max-width: 500px;
+  margin: 20px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#mid,
+#bottom {
+  padding: 15px 025px 15px 15px;
+}
+#bottom {
+  padding-bottom: 25px;
+}
+p {
+  opacity: 0.6;
+}
+/*
+===================================================
+                    TOP-IMG
+===================================================
+*/
+#top-img img {
+  max-width: 100%;
+}
+/*
+===================================================
+                    MID
+===================================================
+*/
+#mid {
+  color: #1c232b;
+}
+#mid #perfume-text {
+  font-size: 0.8rem;
+}
+#mid h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  padding: 10px 0 20px 0;
+}
+/*
+===================================================
+                    BOTTOM
+===================================================
+*/
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#button button {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  padding: 10px 0 10px 0;
+  background-color: #3c8067;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 500;
+}
+#bottom button:hover {
+  background-color: #083625;
+  cursor: pointer;
+}
+#button button img {
+  margin-right: 5px;
+}
+#bottom #price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10px;
+  font-family: "Fraunces", serif;
+}
+#price h1 {
+  color: #3c8067;
+}
+#price p {
+  margin-left: 25px;
+  text-decoration: line-through;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+/*
+===================================================
+                    BREAKPOINTS
+===================================================
+*/
+@media (min-width: 576px) {
+  #main-container {
+    display: flex;
+  }
+  #top-img {
+    flex-basis: 50%;
+  }
+  #top-img img {
+    height: 100%;
+  }
+  #main {
+    flex-basis: 50%;
+  }
+}
